@@ -1,4 +1,5 @@
 node_modules/
+.github-token
 .edge-preview-profile/
 site-preview.png
 *.log
