@@ -1,0 +1,3 @@
+- insert:
+    - id: chromatic-rules
+      name: '@local/chromatic-rules'

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Chromatic Rules">
+  <defs>
+    <linearGradient id="cr-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172033"/>
+      <stop offset="1" stop-color="#080d17"/>
+    </linearGradient>
+    <linearGradient id="cr-ruby" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8fa8"/>
+      <stop offset="1" stop-color="#c72d4f"/>
+    </linearGradient>
+    <linearGradient id="cr-azure" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8dc2ff"/>
+      <stop offset="1" stop-color="#2568d8"/>
+    </linearGradient>
+    <linearGradient id="cr-amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd98a"/>
+      <stop offset="1" stop-color="#c37c13"/>
+    </linearGradient>
+    <linearGradient id="cr-violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ceb1ff"/>
+      <stop offset="1" stop-color="#7540d7"/>
+    </linearGradient>
+    <linearGradient id="cr-jade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#91f0cc"/>
+      <stop offset="1" stop-color="#128764"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#cr-bg)" stroke="#2d3b55" stroke-width="1.5"/>
+  <rect x="24" y="7" width="16" height="16" rx="4" fill="url(#cr-ruby)"/>
+  <rect x="7" y="24" width="16" height="16" rx="4" fill="url(#cr-amber)"/>
+  <rect x="41" y="24" width="16" height="16" rx="4" fill="url(#cr-azure)"/>
+  <rect x="24" y="41" width="16" height="16" rx="4" fill="url(#cr-jade)"/>
+  <rect x="24" y="24" width="16" height="16" rx="4" fill="url(#cr-violet)"/>
+  <path d="M32 12.5v9M32 42.5v9M12.5 32h9M42.5 32h9" stroke="#f4f7ff" stroke-opacity=".28" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

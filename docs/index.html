@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>色域法则 · Chromatic Rules</title>
+  <meta name="description" content="一个关于规则组合的细胞自动机游戏：在彩色格阵中组合消失与增殖规则，观察颜色疆域生长、退场与碰撞。">
+  <meta property="og:title" content="色域法则 · Chromatic Rules">
+  <meta property="og:description" content="组合消失与增殖规则，塑造一片会呼吸的色块。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="brand">
+        <a class="logo" href="./" aria-label="色域法则首页">
+          <span></span><span></span><span></span><span></span>
+        </a>
+        <div class="brand-copy">
+          <p class="eyebrow">CHROMATIC RULES · 规则实验场</p>
+          <h1>色域法则</h1>
+          <p class="subtitle">在彩色格阵里编写消失与增殖的法则，观察一片颜色如何生长、退场与重组。</p>
+        </div>
+      </div>
+      <div class="hero-controls">
+        <nav class="levels" id="levels" aria-label="选择关卡"></nav>
+        <button class="icon-button theme-toggle" id="theme-toggle" type="button" data-action="theme" aria-label="切换深色 / 浅色主题" title="切换深色 / 浅色主题">
+          <span id="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="card board-card">
+        <div class="board-head">
+          <div>
+            <p class="kicker" id="progress-label"></p>
+            <div class="board-title" id="level-title"></div>
+          </div>
+          <div class="board-meta">
+            <span class="status" id="status"><span class="status-dot" aria-hidden="true"></span><span id="status-text"></span></span>
+            <span class="pill" id="gen-pill"></span>
+            <span class="pill" id="step-pill"></span>
+          </div>
+        </div>
+
+        <div id="result" aria-live="polite"></div>
+
+        <div class="board-wrap">
+          <div class="board" id="board" role="grid" aria-label="彩色格阵"></div>
+        </div>
+
+        <p class="step-strip" id="step-strip" aria-live="polite"></p>
+        <div class="legend" id="legend" aria-label="色块存量"></div>
+        <div class="paintbar" id="paintbar" hidden></div>
+
+        <div class="controls">
+          <button class="button primary" id="step-button" data-action="step" type="button">
+            <span class="button-icon" aria-hidden="true">▶</span><span>演算 1 步</span>
+          </button>
+          <button class="button" id="auto-button" data-action="auto" type="button">
+            <span class="button-icon" aria-hidden="true">⟳</span><span id="auto-label">自动演化</span>
+          </button>
+          <button class="button" data-action="reset" type="button">
+            <span class="button-icon" aria-hidden="true">↺</span><span>重置棋盘</span>
+          </button>
+          <div class="speed">
+            <span>节奏</span>
+            <span class="speed-edge">慢</span>
+            <input id="speed" type="range" min="180" max="1400" step="20" value="620" aria-label="自动演化速度">
+            <span class="speed-edge">快</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="side">
+        <section class="card mission-card" id="mission"></section>
+        <section class="card rules-card">
+          <div class="card-pad" id="rules"></div>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <span>色域法则 · 一个关于规则组合的细胞自动机实验</span>
+      <span>规则改变世界，观察改变规则。</span>
+    </footer>
+  </div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
